@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELLME | About Us</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="navbar-title">TELLME<img class="logo-icon" src="images/logo.png" alt="sdsu ceremony"></li>
+            <li class="navbar-toggle">Menu</li>
+            <li class="navbar-item"><a href="home.html">Home</a></li>
+            <li class="navbar-item"><a href="workingProecss.html">Working Process</a></li>
+            <li class="navbar-item"><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+    <section class="header">
+        <div class="header-info">
+            <h1>About Us</h1>
+            <p>
+                Our team consists of three members and we worked together and tried to create a device that would help people to receive messages via Bluetooth when they are not at home. For detailed information, you can refer to each member's contribution to the project listed below
+            </p> 
+        </div>
+        <div class="header-image">
+            <img src="images/aboutUs_default_img.png" alt="sdsu chemistry class">
+        </div>
+    </section>
+
+
+
+
+    <div class="general-info">
+        <h2>Abous Us</h2>
+        <div class="collection">
+                <!--1-->
+            <div class="collection-cell">
+                <div class="cell-info">
+                    <img src="images/Elene_img.png" alt="ESP image">
+                </div>
+                <br>
+                <p class="cell-info description">Elene Paitchadze</p>
+            </div>
+                <!--2-->
+            <div class="collection-cell">
+                <div class="cell-info">
+                    <img src="images/Data_img.png" alt="Touch Screen image">
+                </div>
+                <br>
+                <p class="cell-info description">David Gogia</p>
+            </div>
+                <!--3-->
+            <div class="collection-cell">
+                <div class="cell-info">
+                    <img src="images/Salome_img.png" alt="camera module image">
+                </div>
+                <br>
+                <p class="cell-info description">Salome Sulkhanishvili</p>
+            </div>
+        </div>
+        <p>
+            Since our device consists of components such as: Camera, MicroSD, RTC, and LCT touchscreen modules, we had the opportunity to work with different types of communication protocols such as: I2C, SPI, and UART; that increased our knowledge and experience which will further help us to create other projects more smoothly and efficiently. What is more, usage of WiFi and Bluetooth in one single project was a challenging experience for us and we learned our lesson on how to handle them together. Apart from components, designing a PCB was quite a great experience, since we had direct contact with manufacturers of PCBs in China who created our PCBs and sent them to Georgia. So, the TELLME device was not only a capstone project, it was our first step in this field. 
+        </p>
+        <div class="gray_view"></div>
+
+        <!-- elene -->
+        <div class="working_process">
+            <h2>Elene Paitchadze</h2>
+            <div class="working_process_img1">
+                <img src="/images/Elene_img.png" alt="Snow" style="width:100%">
+              </div>
+            <div class="working_process_txt1">
+                <p>
+                    My responsibilities in assembling the TELLME device mainly consisted of touch screen setup, web development, and setup of other components such as MicroSD, RTC, and Camera modules. As a group we worked together in laboratories, prepared presentations, and tested the device.
+                    <br>
+                    For the Web development part with the help of Salome Sulkhanishvili, I created the overall design of the webpage in the Figma application and later implemented it in the VS code. I used HTML, CSS, and JavaScript for writing the code. The webpage has 3 different sections such as description of the project, information about the components used, and little backstories about the group members and their contributions to the project. From the website the interested individuals also can visit our GitHub link where they can see the project in its detail. 
+<br>
+We worked on the touch screen setup together, first we downloaded the special program - Nextion Editor for configuring the LCD display; then again with the help of the Figma application we created the general design on the display and then implemented it in Arduino IDE. We wrote code for configuring general items on Nextion display such as: pages, pictures, buttons, and text areas.
+
+                </p>
+            </div>
+            <div class="Personal_links">
+                <p>
+                    <i class="fa fa-github" style="font-size:30px; color:black"></i>
+                    <a href="https://github.com/ElenePaitchadze">/ElenePaitchadze</a>
+                    &nbsp &nbsp &nbsp
+                    <i class="fa fa-linkedin"style="font-size:24px; color: rgba(0, 119, 181)"></i>
+                    <a href="https://www.linkedin.com/in/elenepaitchadze/">/ElenePaitchadze</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+
+        <!-- datai -->
+        <div class="working_process">
+            <h2>David Gogia</h2>
+            <div class="working_process_img">
+              <img src="/images/Data_img.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="working_process_txt">
+                <p>
+                    My Responsibilities in the creation of project TELLME were - circuit design, pcb design, 3D box design and screen setup. I also took part in group work such as making presentations, reports and device testing
+<br>
+My first job as an electrical engineer of the team was to design the circuit of our project. I chose most of the components based on experience as I have previously worked with them and knew their capabilities and how they worked. The main component of the circuit is ESP32, as we needed a microcontroller which could be connected to WIFI and Bluetooth. So based on the microcontroller, we added components which could be easily connected and programmed. These components are - the OV7670 camera module, Nextion touch screen, Real time clock module and MicroSD. After choosing the components, I created the circuit with the Easyeda circuit designer program. I also designed the PCB model in a way which would occupy less space, placing it under the screen, having the least amount of height.  
+<br>
+For the 3D box, I designed it with the program FreeCAD. The design is based on the PCB, where the circuit is placed inside the box, and the screen goes on the top opening. It has holes for the power supply cable and the camera cables which are placed outside the box.
+
+                </p>
+            </div>
+            <div class="Personal_links">
+                <p>
+                    <i class="fa fa-linkedin"style="font-size:24px; color: rgba(0, 119, 181)"></i>
+                    <a href="https://www.linkedin.com/in/david-gogia-11ba12235/">/David Gogia</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+
+        <!-- Salome  -->
+        <div class="working_process">
+            <h2>Salome Sulkhanishvili</h2>
+            <div class="working_process_img1">
+                <img src="/images/Salome_img.png" alt="Snow" style="width:100%">
+              </div>
+            <div class="working_process_txt1">
+                <p>
+                    My responsibilities in this project were mostly related to the software part of the device and the components setup. At least twice a week I and Elene Paitchadze were working on the components setup; we were first reading and understanding all the necessary details of the given component by using its manual, and then we were writing software code for it in the Arduino IDE. Besides the software part, I was actively involved in the ordering process of all the necessary components. 
+<br>
+What is more, I was helping Elene Paitchadze with web development. We created a Web design using Figma and then together created the web application based on the design. By working together, we were able to divide tasks accordingly to not make this whole working process monotonous and hard for a single person. We were using our knowledge and based on our ideas writing the program.
+
+                </p>
+            </div>
+            <div class="Personal_links">
+                <p>
+                    <i class="fa fa-github" style="font-size:30px; color:black"></i>
+                    <a href="https://github.com/SalomeSulkhanishvili">/SalomeSulkhanishvili</a>
+                    &nbsp &nbsp &nbsp
+                    <i class="fa fa-linkedin"style="font-size:24px; color: rgba(0, 119, 181)"></i>
+                    <a href="https://www.linkedin.com/in/salomesulkhanishvili/">/SalomeSulkhanishvili</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <hr>
+        <h3>Contact Us</h3> 
+        <br>
+        <p>Optimized for learning and training. Examples might be simplified to improve reading and learning. 
+        Tutorials, references, and examples are constantly reviewed to avoid errors, but we 
+        cannot warrant full correctness of all content.<br>
+        <br>
+
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <br>Copyright &copy; 2023 by TELLME team. <br>All Rights Reserved.</p>
+    </section>
+</body>
+</html>

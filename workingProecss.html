@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELLME | Working Process</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="navbar-title">TELLME<img class="logo-icon" src="images/logo.png" alt="sdsu ceremony"></li>
+            <li class="navbar-toggle">Menu</li>
+            <li class="navbar-item"><a href="home.html">Home</a></li>
+            <li class="navbar-item"><a href="workingProecss.html">Working Process</a></li>
+            <li class="navbar-item"><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+    <section class="header">
+        <div class="header-info">
+            <h1>Working Process</h1>
+            <p>
+                On this page you can see how our team prepared the project step by step 
+            </p>
+        </div>
+        <div class="header-image">
+            <img src="images/working_process_default_img.png" alt="sdsu chemistry class">
+        </div>
+    </section>
+
+    <div class="general-info">
+        <div class="general_description">
+            <!--<h2>Working process</h2>-->
+            <p>
+                For creating our device we used different components that were suitable for our project. In the following passage we are going to meticulously describe all the components' general description, purpose, and usage. What is more, in order to have some final look we designed PCB on which we soldered all the modules.
+            </p>
+            <div class="Working_Steps">
+                <h3>Working Process Steps:</h3>
+                <ul>
+                    <li>ESP32 (WiFi + Bluethooth/BLE)</li>
+                    <li>BLE (Bluethooth Low Energy)</li>
+                    <li>WiFi</li>
+                    <li>Nextion touch screen</li>
+                    <li>MicroSD Card Module</li>
+                    <li>RTC Module</li>
+                    <li>SMTP (Simple Mail Transfer Protocol)</li>
+                    <li>Camera Module OV7670</li>
+                    <li>PCB Design</li>
+                    <li>Device Design</li>
+                    <li>3D Box Design</li>
+                </ul> 
+            </div>
+        </div>
+        <div class="gray_view"></div>
+
+        <!--1-->
+        <div class="working_process">
+            <h2>ESP32 (WiFi + Bluethooth/BLE)</h2>
+            <div class="working_process_img">
+              <img src="/images/ESP_img.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="working_process_txt">
+                <p>
+                    ​​For the TELLME device we used the ESP32 D Wroom model with WiFi and Bluetooth/BLE modules. It is a main component of the project and every other module handled by using it. We programmed our ESP32 with the help of Arduino IDE. 
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+        
+        <div class="working_process">
+            <h2>BLE (Bluethooth Low Energy)</h2>
+            <div class="working_process_img1">
+                <img src="/images/BLE_img.png" alt="Snow" style="width:100%">
+              </div>
+            <div class="working_process_txt1">
+                <p>
+                    Depending on the purpose of our application we used the BLE (Bluetooth Low Energy) protocol for communication via sender and device. BLE is designed for very low power operation. Transmitting data over 40 channels in the 2.4GHz unlicensed ISM frequency band. 
+The main reason why we used BLE for our TELLME project is because it is compatible with both iOS and Android devices, so the user can easily leave a message no matter what type of phone he or she has. 
+
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+
+        <div class="working_process">
+            <h2>WiFi</h2>
+            <div class="working_process_img">
+              <img src="/images/WiFi_img.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="working_process_txt">
+                <p>
+                    One of the functionalities of our device is to send an email to the owner of a house, because of this we needed to use the WiFi module. Apart from that, users at any time can specify a new WiFi name and password for the device. Since the name and password of the WiFi are stored in the separate file on the SD card, in the case of power outage WiFi setup information will not be 
+lost and the user will not have to indicate everything from scratch. 
+
+Our ESP32 already had an integrated WiFi module which works on 2.4GHz ISM frequency band, and all we had to do was to configure it.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+
+        <div class="working_process">
+            <h2>Nextion touch screen</h2>
+            <div class="working_process_img1">
+                <img src="/images/touch_screen_img.png" alt="Snow" style="width:100%">
+              </div>
+            <div class="working_process_txt1">
+                <p>
+                    We are using the Nextion touch screen to display the messages that we get from a stranger. The main reason why we chose Nextion touch screen is that it provided all the necessary details that we needed our touchscreen to have. We are using UART Communication between the touchscreen and ESP32.
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+        
+        <div class="working_process">
+            <h2>MicroSD Card Module</h2>
+            <div class="working_process_img">
+              <img src="/images/MicroSD_img.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="working_process_txt">
+                <p>
+                    The microSD card module is compatible with the microcontroller systems like Arduino and is used for reading and writing the data on SD card. This module is useful for our project since we are required to work with the text messages and images that need to be stored to avoid data loss during power outage. We are using SPI communication between ESP32 and MicroSD card module.
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+        
+        <div class="working_process">
+            <h2>RTC Module</h2>
+            <div class="working_process_img1">
+                <img src="/images/RTC_img.png" alt="Snow" style="width:100%">
+              </div>
+            <div class="working_process_txt1">
+                <p>
+                    We are using the RTC module to display time and date on the Nextion Display’s main screen. Apart from that, when the message is sent we are appending the text message with the exact time and date when it was received. On the Nextion display, besides the text message the user can also see the date and time of the incoming message. 
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+
+        <div class="working_process">
+            <h2>SMTP (Simple Mail Transfer Protocol)</h2>
+            <div class="working_process_img">
+              <img src="/images/SMTP_img.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="working_process_txt">
+                <p>
+                    Also, for sending information via email we used the ESP-MAIL-Client library which is generally used in SMTP (Simple Mail Transfer Protocol). First, before using SMTP we created a separate mail address for ESP32 and after two step authentication we got the option to send mail via our application by using SMTP. So, in case of available WiFi, the user will receive a text message with a stranger's picture from the TELLME device.
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+        
+        <div class="working_process">
+            <h2>Camera Module OV7670</h2>
+            <div class="working_process_img1">
+                <img src="/images/camera_module_img.png" alt="Snow" style="width:100%">
+              </div>
+            <div class="working_process_txt1">
+                <p>
+                    The Camera module is used to take photos of the people who are trying to leave any information to the homeowner via BLE. We used the I2C protocol for communication with ESP32. Pictures resolution for TELLME devices is 160x120 which can be modified afterwards.
+                    Camera module will be placed inside the house somewhere near the peephole in order to take strangers' pictures appropriately.    
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+
+        <div class="working_process">
+            <h2>PCB Design</h2>
+            <div class="working_process_img">
+              <img src="/images/PCB_img.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="working_process_txt">
+                <p>
+                    The circuit was designed in Easyeda circuit and PCB design tool. As mentioned above, our project uses ESP32 WROOM microcontroller, OV7670 camera module, Nextion touch Screen, MicroSD module and Real Time Clock. The connections were made according to the codes written for each component in order to operate correctly.
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+        
+        <div class="working_process">
+            <h2>Device Design</h2>
+            <div class="working_process_img1">
+                <img src="/images/Device_Design_img.png" alt="Snow" style="width:100%">
+              </div>
+            <div class="working_process_txt1">
+                <p>
+                    Our device will be attached to the main door and power supply will be necessary for the TELLME device to work. Users can easily check new received messages by LCD touchscreen after arriving at home, or at any time via email. Here in the first picture you can see a 3D model of our device placed inside the house; and in the second picture, you can see a small hole from which the camera can take pictures of strangers when they leave a message, and also the sticker indicating that the house owner has the TELLME device.
+                </p>
+            </div>
+        </div>
+
+        <div class="gray_view"></div>
+
+        <div class="working_process">
+            <h2>3D Box Design</h2>
+            <div class="working_process_img">
+              <img src="/images/3D_box_img.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="working_process_txt">
+                <p>
+                    For our project we needed to create a 3D box design where our PCB with attached components would be placed. We created a box which on the one side has a little hole for the camera (back), and on the other side (front) the users can see the LCD screen. In the following pictures you can see how the 3D design looks. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="footer">
+        <hr>
+        <h3>Contact Us</h3> 
+        <br>
+        <p>Optimized for learning and training. Examples might be simplified to improve reading and learning. 
+        Tutorials, references, and examples are constantly reviewed to avoid errors, but we 
+        cannot warrant full correctness of all content.<br>
+        <br>
+
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <br>Copyright &copy; 2023 by TELLME team. <br>All Rights Reserved.</p>
+    </section>
+</body>
+</html>
